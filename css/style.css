@@ -1,0 +1,84 @@
+*{
+    margin: 0; /*le damos margen 0 a toda la pagina*/
+    padding: 0; /*le damos distancia de 0 a todos los elementos con los bordes
+    box-sizing: border-box; /*(para tener el control de las cajas que vamos a estar utilizando)*/
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+body{
+    width: 100%; /* alto del body */ 
+    height: 100vh; /* ancho del body */
+    display: flex; /* para que sea una caja flexible */
+    justify-content: center; /* para que toda etiqueta que este dentro del body este centrada de manera horizontal */
+    align-items: center; /* para que toda etiqueta este centrada en el body de manera vertical */
+    font-family: sans-serif; /*t ipo de letra q usamos */
+} 
+header{
+    position: absolute;
+    top: 50px;
+    font-size: larger;
+    font-weight: 2800px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1{
+    background-color: #6a6a6a;
+    color: #fff;
+}
+nav{
+    border:2px;
+    border-color: black;
+    nav-down: current;
+}
+
+.container{ /*le damos estilo a toda la caja que engloba a las 3 tarjetas*/
+     width: 100%; /*ancho*/
+     display: flex; /*caja flexible*/
+     max-width: 1100px; /*le damos el maximo de ancho*/
+}
+
+.card{ /*para darle estilo a la tarjeta*/
+    width: 100%; /*ancho*/
+    margin: 20px; /*margen*/
+    border-radius: 6px; /*para darle un borde con las puntas redondeadas*/
+    overflow: hidden; /*para que todo lo q este fuera del contenedor "CARD" se oculte*/
+    background: #fff; /*color de fondo de la tarjeta*/
+    box-shadow: 1px 2px 15px rgba(0,0,0,0.3); /*para darle un sombreado a la tarjeta, los valores del rgaba son 0 de rojo, de verde, de azul, y 0.2 de trasnparente*/
+    cursor: default; /*para cuando pasemos el cursor por encima del texto no se vea mal*/
+    transition: all 400ms ease; /*para darle un efecto suave y corto "400 milisegundos"*/
+}
+.card:hover{ /*para mover las tarjetas al pasar el cursor*/
+    box-shadow: 8px 8px 25px rgba(0,0,0,0.6); /*para darle un sombreado a la tarjeta cuando pasemos el cursor por encima*/
+    transform: translateY(-3%); /*para que la tarjeta al pasar el cursor se traslade hacia arriba en este caso un "-3%"*/
+}
+.card img{ /*para darle estilo a las imagenes*/
+    width: 100%; /*ancho*/
+    height: 210px; /*alto*/
+}
+.card .contenido{ /*para darle estilo a la caja que engloba a los titulos y a los parrafos*/
+    padding: 15px; /*para la el espacio entre el contenido del elemento y su borde*/
+    text-align: center; /*para alinear el texto en el centro*/
+}
+.card .contenido p{ /*para darle estilo a los parrafos*/
+    line-height: 1.5; /*es para darle espacio entre las lineas de los parrafos*/
+    color: #6a6a6a;
+}
+.card .contenido h3{ /*para darle estilo a los titulos*/
+    font-weight: 400; /*para reducir la negrita al titulo*/
+    margin-bottom: 15px; /*para darle distancia al titulo y empuje hacia abajo al parrafo*/
+}
+.card .contenido a{ /*para darle estilo a la etiqueta "a"*/
+    text-decoration: none; /*para sacarle el subrayado*/
+    display: inline-block; /*con esto el elemento aparece en línea pero se comporta como un elemento en bloque, resulta muy útil cuando queremos dar una anchura al elemento*/
+    padding: 10px; /*para la el espacio entre el contenido del elemento y su borde*/
+    margin-top: 10px; /*establece el margen superior de la etiqueta "a" elemento*/ 
+    color:#2fb4cc; /*para darle color a las letras*/
+    border: 1px solid #2fb4cc; /*para darle un borde al boton*/
+    border-radius: 4px; /*para darle un redondeado a las esquinas del borde*/
+    transition: all 400ms ease; /*para darle un efecto de movimiento cuando pasemos el cursor por el boton*/
+}
+.card .contenido a:hover{ /*para darle estilo al boton de la etiqueta "a"*/
+    background: #2fb4cc; /*para darle un color de fondo al boton cuando pasamos el cursor*/
+    color: #fff; /*para darle color a las letras, en este caso blanco porque le hemos dado un fondo oscuro*/
+}
