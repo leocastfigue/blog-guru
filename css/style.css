@@ -18,9 +18,12 @@ body{
 
 
 .container{ /*le damos estilo a toda la caja que engloba a las 3 tarjetas*/
-     width: 100%; /*ancho*/
+     width: 600px; /*ancho*/
      display: flex; /*caja flexible*/
-     max-width: 1100px; /*le damos el maximo de ancho*/
+}
+.max-min{
+    max-width: 150px;
+    min-width: 75px; /*le damos el maximo de ancho*/
 }
 
 .card{ /*para darle estilo a la tarjeta*/
