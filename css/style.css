@@ -15,22 +15,7 @@ body{
     align-items: center; /* para que toda etiqueta este centrada en el body de manera vertical */
     font-family: sans-serif; /*t ipo de letra q usamos */
 } 
-header{
-    position: absolute;
-    top: 50px;
-    font-size: larger;
-    font-weight: 2800px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-h1{
-    background-color: #6a6a6a;
-    color: #fff;
-}
-nav{
-    border:2px;
-    border-color: black;
-    nav-down: current;
-}
+
 
 .container{ /*le damos estilo a toda la caja que engloba a las 3 tarjetas*/
      width: 100%; /*ancho*/
