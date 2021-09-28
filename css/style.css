@@ -21,9 +21,9 @@ body{
      width: 450px; /*ancho*/
      display: flex; /*caja flexible*/
 }
-.max-min{
-    max-width: 150px;
-    min-width: 75px; /*le damos el maximo de ancho*/
+.max-min{ /*para hacer responsive la pagina*/
+    max-width: 150px; /*le damos el maximo ancho*/
+    min-width: 75px; /*le damos el minimo de ancho*/
 }
 
 .card{ /*para darle estilo a la tarjeta*/
